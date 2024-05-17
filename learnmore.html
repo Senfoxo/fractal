@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fractal++ - Learn More</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="prism.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="animate-fadeIn"><span class="fractal">Fractal</span><span class="plus">++</span></h1>
+
+        <h2 class="animate-fadeIn">Key Features</h2>
+        <ul class="features animate-fadeIn">
+            <li>Elegant and expressive syntax</li>
+            <li>Powerful built-in functions</li>
+            <li>Support for functional programming paradigms</li>
+            <li>Efficient memory management</li>
+            <li>Seamless integration with existing libraries</li>
+        </ul>
+
+        <h2 class="animate-fadeIn">Code Examples</h2>
+        <div class="example animate-fadeIn">
+            <div style="text-align: center;">
+                <pre class="line-numbers">
+                    <code class="language-fractal">
+<span class="tooltip" data-tooltip="Import io"><span class="function"><^></span> ::= <span class="keyword">import</span> <span style="color: lightblue;">io</span></span>
+
+<span class="tooltip" data-tooltip="Define message"><span class="function"><#></span> ::= <span class="string">"Fractal++ is the best language!"</span></span>
+
+<span class="tooltip" data-tooltip="Print function"><span class="function"><$></span> ::= (<span class="parameter">msg</span>) => {
+<span style="color: lightblue;">io</span>.console(<span class="parameter">msg</span>)
+}</span>
+
+<span class="tooltip" data-tooltip="Main program"><span class="function"><&></span> ::= {
+<span class="keyword">let</span> <span style="color: black;">message</span> = <span class="function"><#></span>
+<span class="function"><$></span>(<span style="color: black;">message</span>)
+}</span>
+
+<span class="tooltip" data-tooltip="Call main"><span class="function"><%></span> ::= () => <span class="function"><&></span></span>
+
+<span class="function"><^></span>
+<span class="tooltip" data-tooltip="Output"><span class="function"><%></span>()</span>
+</code>
+</pre>
+            </div>
+            <p>This code demonstrates the syntax and features of the fictional programming language Fractal++, including module imports, constant definitions, function definitions, and the main program structure.</p>
+        </div>
+
+        <div class="example animate-fadeIn">
+            <div style="text-align: center;">
+                <pre class="line-numbers">
+                    <code class="language-fractal">
+<span class="tooltip" data-tooltip="Import math"><span class="function"><^></span> ::= <span class="keyword">import</span> <span style="color: lightblue;">math</span></span>
+
+<span class="tooltip" data-tooltip="Factorial function"><span class="function"><!</span> ::= (<span class="parameter">n</span>) => {
+<span class="keyword">if</span> (<span class="parameter">n</span> <= <span class="number">1</span>) {
+    <span class="keyword">return</span> <span class="number">1</span>
+}
+<span class="keyword">return</span> <span class="parameter">n</span> * <span class="function"><!></span>(<span class="parameter">n</span> - <span class="number">1</span>)
+}</span>
+
+<span class="tooltip" data-tooltip="Main program"><span class="function"><&></span> ::= {
+<span class="keyword">let</span> <span style="color: black;">number</span> = <span class="number">5</span>
+<span class="keyword">let</span> <span style="color: black;">result</span> = <span class="function"><!></span>(<span style="color: black;">number</span>)
+<span style="color: lightblue;">math</span>.print(<span class="string">"Factorial of"</span>, <span style="color: black;">number</span>, <span class="string">"is"</span>, <span style="color: black;">result</span>)
+}</span>
+
+<span class="tooltip" data-tooltip="Call main"><span class="function"><%></span> ::= () => <span class="function"><&></span></span>
+
+<span class="function"><^></span>
+<span class="tooltip" data-tooltip="Output"><span class="function"><%></span>()</span>
+</code>
+</pre>
+            </div>
+            <p>This example showcases a recursive factorial function in Fractal++. It demonstrates the use of conditional statements, recursion, and the built-in math module for printing the result.</p>
+        </div>
+        <h2 class="animate-fadeIn">Function Reference</h2>
+        <ul class="function-list animate-fadeIn">
+            <li><span class="function">&lt;^&gt;</span> : Import a module</li>
+            <li><span class="function">&lt;#&gt;</span> : Define a constant value</li>
+            <li><span class="function">&lt;$&gt;</span> : Define a function for printing</li>
+            <li><span class="function">&lt;&amp;&gt;</span> : Define the main program</li>
+            <li><span class="function">&lt;%&gt;</span> : Call the main program</li>
+            <li><span class="function">&lt;!&gt;</span> : Define a factorial function</li>
+            <li><span class="function">&lt;@&gt;</span> : Define a recursive function</li>
+            <li><span class="function">&lt;~&gt;</span> : Define a higher-order function</li>
+            <li><span class="function">&lt;*&gt;</span> : Define a generator function</li>
+            <li><span class="function">&lt;+&gt;</span> : Define an asynchronous function</li>
+            <li><span class="function">&lt;_&gt;</span> : Define a function with default parameters</li>
+            <li><span class="function">&lt;%!&gt;</span> : Define a memoized function</li>
+            <li><span class="function">&lt;$@&gt;</span> : Define a curried function</li>
+            <li><span class="function">&lt;!$&gt;</span> : Define a function with rest parameters</li>
+            <li><span class="function">&lt;@!&gt;</span> : Define a function with pattern matching</li>
+            <li><span class="function">&lt;%*&gt;</span> : Define a function with spread operator</li>
+            <li><span class="function">&lt;+@&gt;</span> : Define a function with async/await</li>
+            <li><span class="function">&lt;_!&gt;</span> : Define a function with optional chaining</li>
+        </ul>
+
+        <a href="index.html" class="go-back animate-fadeIn">< Go Back</a>
+    </div>
+
+    <script src="prism.js"></script>
+</body>
+</html>
